@@ -1,0 +1,160 @@
+<!doctype html>
+<html>
+<head>
+<link href="commonElements.css" rel="stylesheet">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+<title>Contact Me Form </title>
+<style> 
+
+
+	
+input[type=text], select {
+  width: 50%;
+  padding: 12px 15px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+}
+
+input[type=submit] {
+  width: 10%;
+  background-color: #b11d00;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #cb1d00;
+	 padding: 15px 30px;
+        text-decoration: none;
+        margin: 4px 2px;
+        cursor: pointer;
+}
+
+  .required::before {
+    content:" *";
+    color: red;
+  }
+	.required:hover::before {
+		content: "Required field ";
+	}
+	.required:hover::after{
+		content: "*";
+		color: red;
+	}
+
+
+	body {
+	background-color: #08212A;	
+}
+
+</style>
+	<script src="jQueryAssets/jquery-1.11.1.min.js"></script>
+	<script src="jQueryAssets/jquery-ui-effects.custom.min.js"></script>
+<script type="text/javascript">
+function MM_DW_effectSlide(obj,method,effect,direction,distance,speed)
+{
+    obj[method](effect, { direction: direction, distance: distance}, speed);
+}
+    </script>
+</head>
+<body>
+	<ul> 
+  <li><a href="index.html">Home</a></li>
+	<li><a href="biography.html">Biography</a></li>
+	<li><a  href="hobbies.html" >Hobbies & Interests</a></li>
+	<li><a href="resume.html" >Resume</a></li>
+	 <li class="dropdown">
+	   <a class="active dropbtn">Contact</a>
+	   <div class="dropdown-content" >
+		 <a class="active" href="contactform.html">Contact Me Form</a>
+  			<a href="map.html">Map</a>
+		   
+	   </div>
+    </li>
+</ul>
+	
+<center>
+
+  <h1 style="color: #B88FB0;">&nbsp;</h1>
+  <p style="color: #B88FB0;">&nbsp;</p>
+	  <h1 style="color: whitesmoke; font-size: 50px;"> Contact </h1>
+	</center>
+	
+<form action="http://mstc.brentapresley.com/HTMLFormTest.php" target="_blank" method="GET" style="padding: 70px; margin-bottom: 120px; margin-left: 120px; margin-right: 120px; background: linear-gradient(90deg, rgba(23,105,67,0.8832575266434699) 29%, rgba(57,97,82,0.8804564061952906) 38%); color:whitesmoke;
+">
+
+
+
+
+
+  
+  <p style="font-size: 18px">
+    <label for="firstName" class="required reqfield">First Name:</label>
+    <br>
+    <input type="text" id="firstName" name="firstName"  required maxlength="29"><br><br><br>
+	  
+<label for="middleName">Middle Name (optional):</label>
+    <br>
+    <input type="text" id="middleName" name="middleName" maxlength="29"><br><br><br>
+	  
+	  
+	  
+    <label for="lastName" class="required">Last Name:</label>
+    <br>
+  <input type="text" id="lastName" name="lastName" required maxlength="29"><br><br><br>
+	  
+	 <label for="organization" class="required">Organization Name:</label>
+	 <br>
+    <input type="text" id="organization" name="organization"  required maxlength="40"><br><br><br>
+	
+
+    
+    
+  <label for="email" class="required" >Email:</label>
+  <br>
+  <input type="email" id="email" name="email" required><br><br><br>
+    
+  <label for="phone">Phone:</label>
+  <br>
+  <input type="tel" id="phone" name="phone"><br><br><br>
+    
+  <label for="reason" class="required">Reason for Contact</label>
+  <br> 
+  <select name="reason" id="reason" required>
+    <option value="empty"></option>
+    <option value="internship" >Internship Opportunity</option>
+    <option value="scholarship">Scholarship Opportunity</option>
+    <option value="conference">Summer/Spring/Winter Conference</option>
+    <option value="course">Summer/Spring/Winter Courses</option>
+    <option value="other">Other</option>
+  </select>
+  <br><br><br>
+    
+  <label for="explain" >If selected <em>Other</em>, please explain.</label>
+  <br><br>
+  <textarea name="message" style="width:700px; height:200px;" maxlength="1500;">
+
+    </textarea>
+  <br><br><br>
+    <label for="reason" class="required" required>Do you prefer contact through email or phone?</label>
+    <br>
+    <input type="checkbox" id="e-mail" name="e-mail" value="email">
+    <label for="e-mail"> Email</label>
+    <br>
+    <input type="checkbox" id="call" name="call" value="tel">
+    <label for="call"> Phone</label>
+    <br> <br>
+  </p>
+
+<center><input type="submit" autofocus="autofocus" value="Submit" ></center>
+</form>
+
+</body>
+</html>

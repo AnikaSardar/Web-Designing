@@ -1,0 +1,46 @@
+@charset "utf-8";
+/* CSS Document */
+
+p2::before {  
+  transform: scaleX(0);
+  transform-origin: bottom right;
+}
+
+p2:hover::before {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+p2::before {
+  content: " ";
+  position: absolute;
+  top: 0; right: 0; bottom: 0; left: 0;
+  inset: 0 0 0 0;
+background: linear-gradient(0.25turn, #3f87a6, #ebf8e1, #f69d3c);
+	z-index:-1;
+  transition: transform .3s ease;
+}
+
+p2 {
+  position: relative;
+  font-size: 5rem;
+  min-block-size: 100%;
+  min-inline-size: 100%;
+  margin: 0;
+  box-sizing: border-box;
+  display: grid;
+  place-content: center;
+  font-family: system-ui, sans-serif;
+  block-size: 100%;
+  inline-size: 100%;
+}
+
+
+
+
+@media (orientation: landscape) {
+  body {
+    grid-auto-flow: column;
+	
+  }
+}

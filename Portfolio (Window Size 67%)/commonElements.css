@@ -1,0 +1,112 @@
+@charset "utf-8";
+/* CSS Document */
+
+ul{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+background: linear-gradient(90deg, rgba(5,44,51,1) 0%, rgba(102,149,164,0.8804564061952906) 31%, rgba(12,39,5,1) 100%);
+
+	width: 100%;
+	border: 5px solid black;
+}
+
+
+li {
+	display: inline-block;
+	text-align: left;
+	padding: 10px 20px;
+}
+
+
+li a, .dropbtn{
+    color: antiquewhite;
+    padding: 1px 100px;
+    font-size: 145%;
+    text-decoration: none;
+} 
+
+
+li a.active{
+background: linear-gradient(90deg, rgba(5,44,51,1) 0%, rgba(25,71,8,0.9700922605370274) 53%, rgba(12,39,5,1) 100%);
+
+	padding: 10px 80px;
+}
+
+li a:hover, .dropdown:hover .dropbtn{
+    background: linear-gradient(90deg, rgba(5,44,51,1) 0%, rgba(8,56,71,0.7852183109571954) 14%, rgba(12,39,5,1) 100%);
+    color: white;
+    border: 5px solid black;
+    font-size: 160%;
+	padding: 10px 80px;
+}
+
+li.dropdown {
+	display: inline-block;
+	
+}
+
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: lightslategrey;
+    font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";
+}
+
+.dropdown-content a {
+	color: black;
+	padding: 8px 70px;
+	text-decoration: none;
+	display: block;	
+	text-align: left;
+	border-style: solid;
+	 font-size: 120%;
+}
+
+.dropdown-content a:hover {
+	background-color: #396E24;
+	color: white;
+	 font-size: 130%;
+
+}
+    
+.footer{ 
+	background-color: darkslategrey; 
+	color: white;
+	text-align: center; 
+	padding: 10px; 
+	font-size: 130%;
+	font-family: Times New Roman; 
+}
+	
+.aOverride {
+	    color: black;
+    font-size: 20px;
+	background: none;
+    border: none;
+		display: inline-block;
+	text-align: left;
+	margin: none;
+
+	
+
+}
+
+.aOverride:hover{
+	    background: none;
+    color: palevioletred;
+    border: none;
+    font-size: 20px;
+	padding: none;
+	margin:none;
+}
+
+.aOverride:active{
+    background: none;
+    padding: none;
+    text-align: left;
+}
